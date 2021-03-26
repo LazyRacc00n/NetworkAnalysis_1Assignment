@@ -1,2 +1,3 @@
-# NetworkAnalysis_1Assignment
-First assignment of Network Analysis course 
+# Network Analysis: Assignment 1
+
+First assignment of Network Analysis course.
