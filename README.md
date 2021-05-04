@@ -1,7 +1,15 @@
 # Network Analysis: Assignment 1
 
-First assignment of Network Analysis course.
+## Information about the dataset
+This dataset consists of 'circles' (or 'friends lists') from Facebook. Facebook data was collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
+It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
 
+## Analysis
+
+Dataset statistics | Values
+Nodes | 4039
+Edges | 88234
+Average Degree | 
 
 - Does the graph have the same characteristics of a random or a power-law network?
   </br></br>
