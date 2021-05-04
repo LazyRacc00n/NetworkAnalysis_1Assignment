@@ -1,7 +1,5 @@
 # Network Analysis: Assignment 1
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
-
 ## Information about the dataset
 This dataset consists of 'circles' (or 'friends lists') from Facebook. Facebook data was collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
 It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
@@ -30,6 +28,9 @@ It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.htm
   ![alt text](images\degree_distribution.png)
   </br></br>
   Observing the graphic of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
+  <!--Poi su git si vede beene -->
+  <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\inline&space;p_k&space;\sim&space;k^{-\gamma}" title="\bg_white \inline p_k \sim k^{-\gamma}" />
+
   
   </br></br>
 
