@@ -23,17 +23,17 @@ It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.htm
 <!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
-- Does the graph have the same characteristics of a random or a power-law network?
+### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
   ![alt text](images\degree_distribution.png)
   </br></br>
-  Observing the graphic of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
+  Observing the chart of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
   <!--Poi su git si vede beene -->
   <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;k^{-\gamma}"/>
 
   </br></br>
 
-- Which are the most important nodes, with respect to a given centrality measure?
+### Which are the most important nodes, with respect to a given centrality measure?
 
 We decide to measure the "importance" of the nodes considering the betweenness and the closeness.
 
@@ -43,10 +43,10 @@ We decide to measure the "importance" of the nodes considering the betweenness a
 
 The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness.
   </br></br>
-- Are the paths short with respect to the size of the network?
+###Are the paths short with respect to the size of the network?
   </br></br>
-- Is the network dense?
+###Is the network dense?
   </br></br>
-- Is the network assortative?
+###Is the network assortative?
   </br></br>
-- And so on
+###And so on
