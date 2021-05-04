@@ -34,8 +34,10 @@ It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.htm
 - Which are the most important nodes, with respect to a given centrality measure?
 We decide to measure the "importance" of nodes considering the betweenness and the closeness.
 
-Betweeness | Closeness
-node | value | node |value
+| Betweeness | Closeness |
+|------------|-----------|
+| node | value | node |value |
+|------|-------|------|------|
 
   </br></br>
 - Are the paths short with respect to the size of the network?
