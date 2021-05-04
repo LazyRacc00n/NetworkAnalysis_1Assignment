@@ -10,15 +10,18 @@ Dataset statistics | Values
 Nodes | 4039
 Edges | 88234
 Average Degree | 
-Average clustering |
-Nodes giant component |
+Average clustering | 0.60
+Nodes giant component | 4039
 Diameter |
 Average shortest path |
-</br></br>
 
+
+<!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
 - Does the graph have the same characteristics of a random or a power-law network?
+  </br></br>
+  
   </br></br>
 - Which are the most important nodes, with respect to a given centrality measure?
   </br></br>
