@@ -35,7 +35,7 @@ It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.htm
 We decide to measure the "importance" of nodes considering the betweenness and the closeness.
 
 | Betweeness | Closeness |
-|------------|-----------|
+
 | node | value | node |value |
 |------|-------|------|------|
 
