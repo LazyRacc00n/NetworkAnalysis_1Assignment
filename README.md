@@ -1,7 +1,7 @@
 # Network Analysis: Assignment 1
 
 ## Information about the dataset
-This dataset consists of 'circles' (or 'friends lists') from Facebook. Facebook data was collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
+This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks. 
 It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
 
 ## Analysis
