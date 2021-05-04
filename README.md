@@ -15,7 +15,8 @@ Nodes giant component |
 Diameter |
 Average shortest path |
 </br></br>
-[!alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png)
+
+![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png)
 
 - Does the graph have the same characteristics of a random or a power-law network?
   </br></br>
