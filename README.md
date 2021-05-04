@@ -43,10 +43,10 @@ We decide to measure the "importance" of the nodes considering the betweenness a
 
 The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness.
   </br></br>
-###Are the paths short with respect to the size of the network?
+### Are the paths short with respect to the size of the network?
   </br></br>
-###Is the network dense?
+### Is the network dense?
   </br></br>
-###Is the network assortative?
+### Is the network assortative?
   </br></br>
-###And so on
+### And so on
