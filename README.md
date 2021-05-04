@@ -29,7 +29,7 @@ It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.htm
   </br></br>
   Observing the graphic of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
   <!--Poi su git si vede beene -->
-  <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\inline&space;p_k&space;\sim&space;k^{-\gamma}" title="\bg_white \inline p_k \sim k^{-\gamma}" />
+  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;k^{-\gamma}" title="\inline p_k \sim k^{-\gamma}" />
 
   
   </br></br>
