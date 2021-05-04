@@ -1,14 +1,15 @@
-# 1. Network Analysis: Assignment 1
+# Network Analysis: Assignment 1
 
-## 1.1. Information about the dataset
-This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks. 
-An <i> ego network</i>, is a network in which there is one central node known as <i> ego </i>. The network is based off the ego and the nodes directly connected with the ego are colled <i> alters </i>. 
-It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html). </br>
+## Information about the dataset
+This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
+It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
+An <i> ego network</i>, is a network in which there is one central node known as <i> ego </i>. The network is based off the ego and the nodes directly connected with the ego are colled <i> alters </i>. 
+
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
-$\alpha^2$
-## 1.2. Analysis
+
+## Analysis
 
 | Dataset statistics | Values|
 |--------------------|-------|
@@ -27,7 +28,7 @@ $\alpha^2$
 <!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
-### 1.2.1. Does the graph have the same characteristics of a random or a power-law network?
+### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
   ![alt text](images\degree_distribution.png)
   </br></br>
@@ -39,7 +40,7 @@ $\alpha^2$
 
   </br></br>
 
-### 1.2.2. Which are the most important nodes, with respect to a given centrality measure?
+### Which are the most important nodes, with respect to a given centrality measure?
 
 We decide to measure the "importance" of the nodes considering the betweenness and the closeness.
 
@@ -57,10 +58,10 @@ The closeness
 
 
   </br></br>
-### 1.2.3. Are the paths short with respect to the size of the network?
+### Are the paths short with respect to the size of the network?
   </br></br>
-### 1.2.4. Is the network dense?
+### Is the network dense?
   </br></br>
-### 1.2.5. Is the network assortative?
+### Is the network assortative?
   </br></br>
-### 1.2.6. And so on
+### And so on
