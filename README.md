@@ -1,6 +1,6 @@
-# Network Analysis: Assignment 1
+# 1. Network Analysis: Assignment 1
 
-## Information about the dataset
+## 1.1. Information about the dataset
 This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
 It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
@@ -9,7 +9,8 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
-## Analysis
+ ![Ego Network - Facebook Circles Combined](./images/Facebooks_circles.png) 
+## 1.2. Analysis
 
 | Dataset statistics | Values|
 |--------------------|-------|
@@ -26,8 +27,8 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
 </br> </br>
 
- ![Ego Network - Facebook Circles Combined](./images/Facebooks_circles.png) 
-### Does the graph have the same characteristics of a random or a power-law network?
+
+### 1.2.1. Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
   ![Degree Distribution](./images/degree_distribution.png)
   </br></br>
@@ -39,7 +40,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
   </br></br>
 
-### Which are the most important nodes, with respect to a given centrality measure?
+### 1.2.2. Which are the most important nodes, with respect to a given centrality measure?
 
 We decide to measure the "importance" of the nodes considering the betweenness and the closeness centrality.
 
@@ -56,17 +57,17 @@ As can be seen from the table the node *107* it has the highest betweeness and t
 The closeness measures don't change too much from one node to the other, and this can be a 
 By constrast the betweeness measures in the ranking dedreases very fast, so there are few nodes which lead the communication between the clusters of the network. In fact it can be seen from the graph above that few nodes connect the cluster to the "center" of the network.
 </br>
-### Are the paths short with respect to the size of the network?
+### 1.2.3. Are the paths short with respect to the size of the network?
   </br>
   The <i>shortest path (or geodesic path)</i>  between two nodes in a network the number of links. The length of a shortest path is called <i> shortest distance </i>.
   The <i> average shortest path </i>, instead, is the average of the shortest paths between all the pairs nodes, and in the network we are considering is about 3.69. So, is possible to say that in this network there is a <b> small-world effect </b> because the average shortest path is surprisingly short when compared with the numkber of nodes of the network, that are 4039.
 
-### Is the network dense?
+### 1.2.4. Is the network dense?
   </br>
   The <b> density </b> of a network is the defined by the following formula: </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
-### Is the network assortative?
+### 1.2.5. Is the network assortative?
   </br></br>
-### Average clustering
+### 1.2.6. Average clustering
 
 The <i> average clustering </i> is the average of all the <i> clustering coefficients</i>, defined as
  </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space; \frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked. 
