@@ -26,10 +26,10 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
 </br> </br>
 
- ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) 
+ ![Ego Network - Facebook Circles Combined](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) 
 ### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
-  ![alt text](images\degree_distribution.png)
+  ![alt text](./images/degree_distribution.png)
   </br></br>
   Observing the chart of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
   <!--Poi su git si vede bene -->
