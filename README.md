@@ -28,6 +28,8 @@ An <i> ego network</i>, is a network in which there is one central node known as
 <!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
+The network 
+
 ### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
   ![alt text](images\degree_distribution.png)
@@ -42,7 +44,7 @@ An <i> ego network</i>, is a network in which there is one central node known as
 
 ### Which are the most important nodes, with respect to a given centrality measure?
 
-We decide to measure the "importance" of the nodes considering the betweenness and the closeness.
+We decide to measure the "importance" of the nodes considering the betweenness and the closeness centrality.
 
 |Betweenness|Closeness|
 |--|--|
@@ -50,12 +52,12 @@ We decide to measure the "importance" of the nodes considering the betweenness a
 
 The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness and the nodes present in both ranking are highlighted.
 
-The betweeness measures, instead the closeness measures the mean distance from a vertex to the other vertices.
+The betweeness measures how many short paths pass to , instead the closeness measures the mean distance from a vertex to the other vertices and therefore the nodes with high closeness can have an easy access to information of influence on other nodes.
 
-As can be seen from the table the node *107* it has the highest betweeness and the higher closeness, so we can say that such node is very important in the network because ...
+As can be seen from the table the node *107* it has the highest betweeness and the higher closeness, so we can say that such node is very important in the network and in the main cluster that is in the center of it.
 
-The closeness 
-
+The closeness measures don't change too much from one node to the other, and this can be a 
+By constrast the betweeness measures in the ranking dedreases very fast, so there are few nodes which lead the communication between the clusters of the network. In fact it can be seen from the graph above that few nodes connect the cluster to the "center" of the network.
 
   </br></br>
 ### Are the paths short with respect to the size of the network?
