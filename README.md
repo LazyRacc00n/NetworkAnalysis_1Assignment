@@ -63,7 +63,7 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 
 ### Is the network dense?
   </br>
-  The <b> density </b> of a network is the defined by the following formula: </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> dense</b>. </br>
+  The <b> density </b> of a network is the defined by the following formula: </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
 ### Is the network assortative?
   </br></br>
 ### Average clustering
