@@ -4,7 +4,7 @@
 This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
 It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
-An <i> ego network</i>, is a network in which there is one central node known as <i> ego </i>. The network is based off the ego and the nodes directly connected with the ego are colled <i> alters </i>. 
+An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego). 
 
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
@@ -20,7 +20,7 @@ An <i> ego network</i>, is a network in which there is one central node known as
 | Nodes giant component | 4039 |
 | Diameter | 8               |
 | Average shortest path | 3.69|
-| Density |                  |
+| Density |         0.01        |
 | Assortativity |            |
 
 </br> </br>
@@ -28,7 +28,7 @@ An <i> ego network</i>, is a network in which there is one central node known as
 <!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
-The network 
+The network is undirected, is composed by 4039 nodes and 88234, so, the density $\rho$
 
 ### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
