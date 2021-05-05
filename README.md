@@ -12,18 +12,18 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
  ![Ego Network - Facebook Circles Combined](./images/Facebooks_circles.png) 
 ## 1.2. Analysis
 
-| Dataset statistics | Values|
-|--------------------|-------|
-| Nodes | 4039               |
-| Edges | 88234              |
-| Average Degree | 43.691    |
-| Average clustering | 0.605 |
-| Global clustering |        |
-| Nodes giant component | 4039 |
-| Diameter | 8               |
+| Dataset statistics | Values |
+|--------------------|------- |
+| Nodes | 4039                |
+| Edges | 88234               |
+| Average Degree | 43.691     |
+| Average clustering | 0.605  |
+| Global clustering |    0.51 |
+| Nodes giant component| 4039 |
+| Diameter |               8  |
 | Average shortest path | 3.69|
 | Density |         0.01      |
-| Assortativity |            |
+| Assortativity |             |
 
 </br> </br>
 
