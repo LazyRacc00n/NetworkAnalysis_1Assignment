@@ -26,11 +26,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
 </br> </br>
 
-<!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
-![alt text](images\Facebooks_circles.png)
-
-
-
+ ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) 
 ### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
   ![alt text](images\degree_distribution.png)
@@ -59,17 +55,15 @@ As can be seen from the table the node *107* it has the highest betweeness and t
 
 The closeness measures don't change too much from one node to the other, and this can be a 
 By constrast the betweeness measures in the ranking dedreases very fast, so there are few nodes which lead the communication between the clusters of the network. In fact it can be seen from the graph above that few nodes connect the cluster to the "center" of the network.
-
-  </br></br>
+</br>
 ### Are the paths short with respect to the size of the network?
   </br>
-  The <i>shortest path (or geodesic path)</i>  between two nodes i, j is the path with fewest number of links.
-  The <i> average shortest path length</i>, hence, is the average of the shortest paths between all the pairs nodes.
-  
-  The <i>diameter</i>, instead, is the longest shortest path in a graph, and since the diameter in this network is equal to 8 and the and the <i> average path length</i> is about 3.69, we can say that the paths are short respect to the size of the network.
+  The <i>shortest path (or geodesic path)</i>  between two nodes in a network the number of links. The length of a shortest path is called <i> shortest distance </i>.
+  The <i> average shortest path </i>, instead, is the average of the shortest paths between all the pairs nodes, and in the network we are considering is about 3.69. So, is possible to say that in this network there is a <b> small-world effect </b> because the average shortest path is surprisingly short when compared with the numkber of nodes of the network, that are 4039.
+
 ### Is the network dense?
   </br>
-  The density </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is sparse. </br>
+  The <b> density </b> of a network is the defined by the following formula: </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> dense</b>. </br>
 ### Is the network assortative?
   </br></br>
 ### Average clustering
