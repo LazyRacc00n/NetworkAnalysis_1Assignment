@@ -62,7 +62,11 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 
   </br></br>
 ### Are the paths short with respect to the size of the network?
-  </br></br>
+  </br>
+  The <i>shortest path (or geodesic path)</i>  between two nodes i, j is the path with fewest number of links.
+  The <i> average shortest path length</i>, hence, is the average of the shortest paths between all the pairs nodes.
+  
+  The <i>diameter</i>, instead, is the longest shortest path in a graph, and since the diameter in this network is equal to 8 and the and the <i> average path length</i> is about 3.69, we can say that the paths are short respect to the size of the network.
 ### Is the network dense?
   </br>
   The density </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is sparse. </br>
