@@ -29,9 +29,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 <!-- Uncomment on github ![alt text](https://github.com/LazyRacc00n/NetworkAnalysis_1Assignment/blob/main/images/Facebooks_circles.png) -->
 ![alt text](images\Facebooks_circles.png)
 
-The network is undirected, is composed by 4039 nodes and 88234. The density </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is sparse. </br>
-The <i> average clustering </i> is the average of all the <i> clustering coefficients</i>, defined as
- </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space; \frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked. 
+
 
 ### Does the graph have the same characteristics of a random or a power-law network?
  </br></br>
@@ -55,7 +53,7 @@ We decide to measure the "importance" of the nodes considering the betweenness a
 
 The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness and the nodes present in both ranking are highlighted.
 
-The betweeness measures how many short paths pass to , instead the closeness measures the mean distance from a vertex to the other vertices and therefore the nodes with high closeness can have an easy access to information of influence on other nodes.
+The betweeness measures how many short paths pass to, instead the closeness measures the mean distance from a vertex to the other vertices and therefore the nodes with high closeness can have an easy access to information of influence on other nodes.
 
 As can be seen from the table the node *107* it has the highest betweeness and the higher closeness, so we can say that such node is very important in the network and in the main cluster that is in the center of it.
 
@@ -66,7 +64,11 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 ### Are the paths short with respect to the size of the network?
   </br></br>
 ### Is the network dense?
-  </br></br>
+  </br>
+  The density </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is sparse. </br>
 ### Is the network assortative?
   </br></br>
-### And so on
+### Average clustering
+
+The <i> average clustering </i> is the average of all the <i> clustering coefficients</i>, defined as
+ </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space; \frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked. 
