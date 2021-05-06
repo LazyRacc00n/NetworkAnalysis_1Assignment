@@ -12,7 +12,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
- ![Ego Network - Facebook Circles Combined](./images/Facebooks_circles.png) 
+ ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
 | Dataset statistics | Values |
@@ -52,7 +52,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
   <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>
   </center>
   </br>
-  
+
  Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
 
  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
