@@ -32,14 +32,30 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
 
 ### 2.1. Does the graph have the same characteristics of a random or a power-law network?
+
  </br></br>
-  ![Degree Distribution](./images/degree_distribution.png)
-  </br></br>
-  Observing the chart of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
-  <!--Poi su git si vede bene -->
-  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;k^{-\gamma}"/>
+
+
+  | ![Degree Distribution](./images/degree_distribution.png) |
+  |:--: |
+  | *Figure 1 - Degree Distribution and fitting of the curve* |
+  
+  
+  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
+  |:--: |
+  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
+  
+  Observing the chart of the degree distribution ( <i> figure 1 </i>) is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
+
+  
+  <center>
+  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>
+  </center>
   </br>
-  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
+  
+ Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+
+ Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
 
   </br></br>
 
