@@ -83,10 +83,13 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 
 ### 2.4. Is the network dense?
   </br>
-  The <b> density </b> of a network is the defined by the following formula: </br></br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
+  The <b> density </b> of a network is the defined by the following formula: 
+  
+  </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space;\frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>,
+  in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
 ### 2.5. Is the network assortative?
   </br></br>
 ### 2.6. Average clustering
 
 The <i> average clustering </i> is the average of all the <i> clustering coefficients</i>, defined as
- </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space; \frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
+ </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
