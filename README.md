@@ -12,7 +12,7 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
- ![Ego Network - Facebook Circles Combined](./images/Facebooks_circles.png) 
+ ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
 | Dataset statistics | Values |
@@ -32,14 +32,30 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 
 
 ### 2.1. Does the graph have the same characteristics of a random or a power-law network?
+
  </br></br>
-  ![Degree Distribution](./images/degree_distribution.png)
-  </br></br>
-  Observing the chart of the degree distribution is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
-  <!--Poi su git si vede bene -->
-  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;k^{-\gamma}"/>
+
+
+  | ![Degree Distribution](./images/degree_distribution.png) |
+  |:--: |
+  | *Figure 1 - Degree Distribution and fitting of the curve* |
+  
+  
+  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
+  |:--: |
+  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
+  
+  Observing the chart of the degree distribution ( <i> figure 1 </i>) is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
+
+  
+  <center>
+  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>
+  </center>
   </br>
-  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
+
+ Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+
+ Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
 
   </br></br>
 
@@ -67,10 +83,17 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 
 ### 2.4. Is the network dense?
   </br>
-  The <b> density </b> of a network is the defined by the following formula: </br></br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space; \frac{L}{\frac{1}{2}N(N-1)"/> </center> </br>, in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
+  The <b> density </b> of a network is the defined by the following formula:
+  </br></br>
+  <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;\rho&space;=&space;\frac{L}{\frac{1}{2}N(N-1)"/> </center> 
+  
+  </br>,in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
 ### 2.5. Is the network assortative?
   </br></br>
 ### 2.6. Average clustering
 
 The <i> average clustering </i> is the average of all the <i> clustering coefficients</i>, defined as
- </br> <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space; \frac{k_i}{k_i(k_i-1)"/> </center> </br>, in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
+ 
+ <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{k_i}{k_i(k_i-1)"/> </center>
+ 
+ , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
