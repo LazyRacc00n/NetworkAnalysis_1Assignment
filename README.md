@@ -1,7 +1,7 @@
 <center> <h1> Network Analysis: Assignment 1 </h1> </center>
 </br>
 <h5 style="text-align: right">Simone Campisi s4341240 </h5>
-<h5 style="text-align: right">Jacopo Dapueto s4379956 </h5>
+<h5 style="text-align: right">Jacopo Dapueto s4345255 </h5>
 
 ## 1. Information about the dataset
 This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
