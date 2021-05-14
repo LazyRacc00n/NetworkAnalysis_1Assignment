@@ -12,6 +12,8 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
+To represent the network has been used <b>Gephi</b>, which provides an alorithm to compute the <i>modularity</i> that allow to identify the <i>communities</i>. Then the network is represented assigned a different color for each community. As you can notice in the image below, these community are groups densely connected among their members, and sparsely connected with the rest of the network. So this is a good way to represent the ego netework, because is possible to see better the circles of friends.
+
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
@@ -25,8 +27,8 @@ An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of
 | Nodes giant component| 4039 |
 | Diameter |               8  |
 | Average shortest path | 3.69|
-| Density |         0.01      |
-| Assortativity |             |
+| Density |         0.06      |
+| Assortativity |     0.06    |
 
 </br> </br>
 
