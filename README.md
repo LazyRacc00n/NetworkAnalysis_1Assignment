@@ -27,7 +27,7 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
 | Nodes giant component| 4039 |
 | Diameter |               8  |
 | Average shortest path | 3.69|
-| Density |         0.06      |
+| Density |         0.01      |
 | Assortativity |     0.06    |
 
 </br> </br>
