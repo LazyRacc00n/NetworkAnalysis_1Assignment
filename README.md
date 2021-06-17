@@ -17,6 +17,8 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
+The following table shows the global statistics we used to analyze the network in the following chapters.
+
 | Dataset statistics | Values |
 |--------------------|------- |
 | Nodes | 4039                |
@@ -43,10 +45,6 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
   | *Figure 1 - Degree Distribution and fitting of the curve* |
   
   
-  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
-  |:--: |
-  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
-  
   Observing the chart of the degree distribution ( <i> figure 1 </i>) is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
 
   
@@ -55,7 +53,19 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
   </center>
   </br>
 
+  
+  
+  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
+  |:--: |
+  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
+  
+  
  Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+ 
+ 
+ What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely observe a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some features:
+ - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
+ - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
 
@@ -91,6 +101,13 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
   
   </br>,in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
 ### 2.5. Is the network assortative?
+
+  In a network can be measured the assortative mixing according to the degree distribution and:
+  - In an **assortative network** high-degree nodes tend to stick together and the structure of the network is characterized by a *core* of high-degree nodes. Hence hubs tend to link to each other and avoid linking to small-degree nodes meanwhile small-degree nodes tend to connect to other small-degree nodes avoiding hubs.
+  - In a **disassortative network** hubs avoid linking each other, and tends to link to small-degree nodes. The network result in a hub-and-spoke topology.
+ 
+ The pearson correlation coefficient is 0.06, which means that the network is non-assortative and there is no a particular correlation between the degrees.
+ It can be undestood looking at the image of the network: the network is made up of clusters where some of them seems to be a hub-and-spoke topology and the others seems to have a *core* of high-degree nodes surrounded by a sparser periphery. So there isn't a dominant mixing.
   </br></br>
 ### 2.6. Average clustering
 
