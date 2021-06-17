@@ -17,6 +17,8 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
+The following table shows the global statistics we used to analyze the network in the following chapters.
+
 | Dataset statistics | Values |
 |--------------------|------- |
 | Nodes | 4039                |
@@ -96,6 +98,11 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
   
   </br>,in which L is the total number of links and N is the total number of nodes, represents the total number of edges on the total possible edges, and in this case this values is very small, 0.01, this means that the network is <b> sparse</b>. </br>
 ### 2.5. Is the network assortative?
+
+  In a network can be measured the assortative mixing according to the degree distribution and:
+  - In an **assortative network** high-degree nodes tend to stick together and the structure of the network is characterized by a *core* of high-degree nodes. Hence hubs tend to link to each other and avoid linking to small-degree nodes meanwhile small-degree nodes tend to connect to other small-degree nodes avoiding hubs.
+  - In a **disassortative network** hubs avoid linking each other, and tends to link to small-degree nodes. The network result in a hub-and-spoke topology.
+  The computed assortativity coefficient is 0.06, which means that
   </br></br>
 ### 2.6. Average clustering
 
