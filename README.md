@@ -56,6 +56,11 @@ To represent the network has been used <b>Gephi</b>, which provides an alorithm 
   </br>
 
  Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+ 
+ 
+ What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely observe a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some features:
+ - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
+ - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
 
