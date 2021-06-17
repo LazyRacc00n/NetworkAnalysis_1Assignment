@@ -45,10 +45,6 @@ The following table shows the global statistics we used to analyze the network i
   | *Figure 1 - Degree Distribution and fitting of the curve* |
   
   
-  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
-  |:--: |
-  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
-  
   Observing the chart of the degree distribution ( <i> figure 1 </i>) is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
 
   
@@ -57,6 +53,13 @@ The following table shows the global statistics we used to analyze the network i
   </center>
   </br>
 
+  
+  
+  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
+  |:--: |
+  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
+  
+  
  Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
  
  
