@@ -102,8 +102,9 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
   In a network can be measured the assortative mixing according to the degree distribution and:
   - In an **assortative network** high-degree nodes tend to stick together and the structure of the network is characterized by a *core* of high-degree nodes. Hence hubs tend to link to each other and avoid linking to small-degree nodes meanwhile small-degree nodes tend to connect to other small-degree nodes avoiding hubs.
   - In a **disassortative network** hubs avoid linking each other, and tends to link to small-degree nodes. The network result in a hub-and-spoke topology.
-  The computed assortativity coefficient is 0.06, which means that the network is non-assortative and there is no a particular correlation between the degrees.
-  It can be undestood looking at the image of the network: the network is made up of clusters where some of them seems to be a hub-and-spoke topology and the others seems to have a *core* of high-degree nodes surrounded by a sparser periphery. So there isn't a dominant mixing.
+ 
+ The computed assortativity coefficient is 0.06, which means that the network is non-assortative and there is no a particular correlation between the degrees.
+ It can be undestood looking at the image of the network: the network is made up of clusters where some of them seems to be a hub-and-spoke topology and the others seems to have a *core* of high-degree nodes surrounded by a sparser periphery. So there isn't a dominant mixing.
   </br></br>
 ### 2.6. Average clustering
 
