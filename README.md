@@ -64,8 +64,8 @@ The following table shows the global statistics we used to analyze the network i
  
  
  What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely observe a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some features:
- - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
- - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;=&space;0.8"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
+ - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
+ - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
  Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there are a fraction of nodes with very high degree, that are the hubs.
 
