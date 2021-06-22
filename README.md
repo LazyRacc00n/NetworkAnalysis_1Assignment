@@ -96,8 +96,7 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 </br>
 ### 2.3. Are the paths short with respect to the size of the network?
   </br>
-  The <i>shortest path (or geodesic path)</i>  between two nodes in a network the number of links. The length of a shortest path is called <i> shortest distance </i>.
-  The <i> average shortest path </i>, instead, is the average of the shortest paths between all the pairs nodes, and in the network we are considering is about 3.69. So, is possible to say that in this network there is a <b> small-world effect </b> because the average shortest path is surprisingly short when compared with the numkber of nodes of the network, that are 4039.
+  The <i> average shortest path </i> is the average of the shortest paths between all the pairs nodes, the average on this network is about 3.69. So, is possible to say that in this network there is a <b> small-world effect </b> because the average shortest path is surprisingly short comparing it with the total number of nodes of the network. Also considering the diameter equal to 8 which means that the longest path is made up of 8 nodes.
 
 ### 2.4. Is the network dense?
   </br>
