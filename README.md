@@ -91,7 +91,7 @@ The betweeness measures how many short paths pass to, instead the closeness meas
 
 As can be seen from the table the node *107* it has the highest betweeness and the higher closeness, so we can say that such node is very important in the network and in the main cluster that is in the center of it.
 
-The closeness measures don't change too much from one node to the other, and this can be a 
+The closeness measures don't vary too much from one node to the other, and this can be due to the logarithmic growth of shortest paths.
 By constrast the betweeness measures in the ranking dedreases very fast, so there are few nodes which lead the communication between the clusters of the network. In fact it can be seen from the graph above that few nodes connect the cluster to the "center" of the network.
 </br>
 ### 2.3. Are the paths short with respect to the size of the network?
