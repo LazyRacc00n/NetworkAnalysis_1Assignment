@@ -69,14 +69,14 @@ The following table shows the global statistics we used to analyze the network i
 
  The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the distribution above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
  We tried to simulate the average path length as the network grows: starting from a random set of nodes and step by step add nodes and edges so that the network remains connected.
- The follwing image shows the tendecy of the distance to follows a <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> curve
+ The follwing image shows the tendecy of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
  
  | ![Degree Distribution](./images/grow_network.png) |
   |:--: |
   | *Figure 3 - average shortest path as the number of nodes increases* |
   
  
-
+This result suggests that <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma = 3"/>
   </br></br>
 
 ### 2.2. Which are the most important nodes, with respect to a given centrality measure?
