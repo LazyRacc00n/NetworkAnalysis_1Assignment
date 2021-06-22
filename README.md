@@ -69,7 +69,7 @@ The following table shows the global statistics we used to analyze the network i
 
  The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the distribution above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
  We tried to simulate the average path length as the network grows: starting from a random set of nodes and step by step add nodes and edges so that the network remains connected.
- The follwing image shows the tendecy of the distance to follow <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{1}{2}&space;"/>
+ The follwing image shows the tendecy of the distance to follows a <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln N}{\ln\ln N}&space;"/> curve
  
  | ![Degree Distribution](./images/grow_network.png) |
   |:--: |
