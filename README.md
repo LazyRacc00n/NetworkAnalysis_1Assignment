@@ -38,6 +38,7 @@ The following table shows the global statistics we used to analyze the network i
 
 ### 2.1. Does the graph have the same characteristics of a random or a power-law network?
 
+To answer to the question we first visualize the degree distribution together with the fitted curve. Each dot represent a degree and the frequency it appears in the dataset.
  </br></br>
 
 
@@ -46,12 +47,8 @@ The following table shows the global statistics we used to analyze the network i
   | *Figure 1 - Degree Distribution and fitting of the curve* |
   
   
-  Observing the chart of the degree distribution ( <i> figure 1 </i>) is possible to notice that the degree distribution follows the trend of a <i>power law</i> degree distribution, described by the following equation:
-
-  
-  <center>
-  <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>
-  </center>
+  Observing the chart of the degree distribution ( <i> figure 1 </i>) is it possible to notice that the degree distribution follows the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
+ 
   </br>
 
   
