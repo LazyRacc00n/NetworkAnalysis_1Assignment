@@ -121,4 +121,4 @@ The <i> average clustering </i> is the average of all the <i> local clustering c
  
  <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{L_i}{k_i(k_i-1)"/> </center>
  
- , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. It captures the density of links in i’s immediate neighborhood, and it is in the range [0,1]. In this case, the mean value of the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
+ , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. It captures the density of links in i’s immediate neighborhood, and it is in the range [0,1]. In this case the mean value of the network is 0.605, it means that on average a node has his 60% of neighbors connected to each other so *structural holes* doesn't seem to be a problem in such network. 
