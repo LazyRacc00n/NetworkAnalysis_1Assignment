@@ -5,7 +5,7 @@
 
 ## 1. Information about the dataset
 This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
-It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
+It's been downloaded from [Stanford Network Analysis Project](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
 An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego). 
 
