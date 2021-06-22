@@ -5,14 +5,15 @@
 
 ## 1. Information about the dataset
 This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
-It's been downloaded from [here](https://snap.stanford.edu/data/ego-Facebook.html).
+It's been downloaded from [Stanford Network Analysis Project](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
-An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego). 
 
-  - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network.
+  - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego).
   - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
-To represent the network has been used <b>Gephi</b>, which provides an alorithm to compute the <i>modularity</i> that allow to identify the <i>communities</i>. Then the network is represented assigned a different color for each community. As you can notice in the image below, these community are groups densely connected among their members, and sparsely connected with the rest of the network. So this is a good way to represent the ego netework, because is possible to see better the circles of friends.
+To visualize the network we used <b>Gephi</b> which provides functionalities to process networks, especially for very large networks. 
+
+One of them identifies the <i>communities</i> through the <i>modularity</i> measure and to each community is assigned a different color. In the image below the community are  densely connected components, and sparsely connected with the rest of the network. So this is a good way to represent the ego netework, because is possible to see better the circles of friends.
 
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
@@ -67,8 +68,17 @@ The following table shows the global statistics we used to analyze the network i
  - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
  - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
- Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there is a fraction of nodes with very high degree, that are the hubs. According to that the gamma may be between 2  and 3...also looking at the chart...
-
+ The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the distribution above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
+ We tried to simulate the average path length as the network grows: starting from a random set of nodes and step by step add nodes and edges so that the network remains connected.
+ The follwing image shows the tendecy of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
+ 
+ | ![Degree Distribution](./images/grow_network.png) |
+  |:--: |
+  | *Figure 3 - average shortest path as the number of nodes increases* |
+  
+ 
+This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point between the *Ultra-small world* and the *Small world* regimes where the hubs are still enough to shrinks the distances compared to a random network of similar size.
+However we cannot be sure about that because of the limited dimension of the dataset.
   </br></br>
 
 ### 2.2. Which are the most important nodes, with respect to a given centrality measure?
