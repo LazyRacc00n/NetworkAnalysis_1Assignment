@@ -67,7 +67,14 @@ The following table shows the global statistics we used to analyze the network i
  - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
  - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
- Since the degree distribution follows a power law, the network is called <i>scale free</i> network, in which fact there is a fraction of nodes with very high degree, that are the hubs. According to that the gamma may be between 2  and 3...also looking at the chart...
+ The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the distribution above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
+ We tried to simulate the average path length as the network grows 
+ 
+ | ![Degree Distribution](./images/grow_network.png) |
+  |:--: |
+  | *Figure 3 - average shortest path as the number of nodes increases* |
+  
+ 
 
   </br></br>
 
