@@ -119,6 +119,6 @@ By constrast the betweeness measures in the ranking dedreases very fast, so ther
 
 The <i> average clustering </i> is the average of all the <i> local clustering coefficients</i>, defined as
  
- <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{k_i}{k_i(k_i-1)"/> </center>
+ <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{L_i}{k_i(k_i-1)"/> </center>
  
- , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. This value captures the degree to which the neighbors of a node link to each other, and it is in the range [0,1]. In this case, the mean value in the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
+ , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. It captures the density of links in i’s immediate neighborhood, and it is in the range [0,1]. In this case, the mean value of the network is 0.605 and this means that there is in average a 60.5% of probability that a node randomly selected has two neighbors linked.
