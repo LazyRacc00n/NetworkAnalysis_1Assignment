@@ -9,7 +9,7 @@ It's been downloaded from [Stanford Network Analysis Project](https://snap.stanf
 The linked page provides two different dataset:
 
   - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego).
-  - The second, that is the one used in the assigmentent is a network obtained combing all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
+  - The second is the one used in the assignment and it is obtained combining all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
 
 To visualize the network we used <b>Gephi</b> which provides functionalities to process networks, especially for very large networks. 
 
@@ -80,13 +80,12 @@ However we cannot be sure about that because of the limited dimension of the dat
 
 ### 2.2. Which are the most important nodes, with respect to a given centrality measure?
 
-We decide to measure the "importance" of the nodes considering the betweenness and the closeness centrality.
-
+We decide to measure the "importance" of the nodes considering the betweenness, the closeness centrality and the degree.
 |Betweenness|Closeness|Degree|
 |--|--|--|
 |<table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>0.480</td></tr> <tr><td>**1684**</td><td>0.337</td></tr> <tr><td>3437</td><td>0.236</td></tr> <tr><td>1912</td><td>0.229</td></tr> <tr><td>1085</td><td>0.149</td></tr> <tr><td>0</td><td>0.146</td></tr> <tr><td>698</td><td>0.115</td></tr><tr><td>567</td><td>0.096</td></tr> <tr><td>58</td><td>0.084</td></tr> <tr><td>428</td><td>0.064</td></tr> </table>| <table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>0.459</td></tr>  <tr><td>58</td><td>0.397</td></tr> <tr><td>428</td><td>0.394</td></tr> <tr><td>563</td><td>0.393</td></tr> <tr><td>**1684**</td><td>0.393</td></tr> <tr><td>171</td><td>0.370</td></tr> <tr><td>348</td><td>0.369</td></tr><tr><td>483</td><td>0.369</td></tr> <tr><td>414</td><td>0.369</td></tr> <tr><td>376</td><td>0.366</td></tr></table>| <table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>1045</td></tr>  <tr><td>**1684**</td><td>782</td></tr> <tr><td>1912</td><td>792</td></tr> <tr><td>3437</td><td>547</td></tr> <tr><td>0</td><td>347</td></tr> <tr><td>2543</td><td>294</td></tr> <tr><td>2347</td><td>291</td></tr><tr><td>1888</td><td>254</td></tr> <tr><td>1800</td><td>245</td></tr> <tr><td>1663</td><td>235</td></tr></table>
 
-The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness and the nodes present in both ranking are highlighted.
+The table above shows the top 10 nodes with maximum betweeness and the top 10 nodes with maximum closeness and the nodes present in all the ranking are highlighted.
 
 The betweeness measures how many short paths pass to, instead the closeness measures the mean distance from a vertex to the other vertices and therefore the nodes with high closeness can have an easy access to information of influence on other nodes.
 
