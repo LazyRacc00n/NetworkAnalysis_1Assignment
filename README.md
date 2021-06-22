@@ -76,7 +76,7 @@ The following table shows the global statistics we used to analyze the network i
   | *Figure 3 - average shortest path as the number of nodes increases* |
   
  
-This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point 
+This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point between the *Ultra-small world* and the *Small world* regimes where the hubs are still enough to shrinks the distances compared to a random network of similar size.
 However we cannot be sure about that because of the limited dimension of the dataset.
   </br></br>
 
