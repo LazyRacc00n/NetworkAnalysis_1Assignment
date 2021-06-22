@@ -76,7 +76,8 @@ The following table shows the global statistics we used to analyze the network i
   | *Figure 3 - average shortest path as the number of nodes increases* |
   
  
-This result suggests that <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma = 3"/>
+This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point 
+However we cannot be sure about that because of the limited dimension of the dataset.
   </br></br>
 
 ### 2.2. Which are the most important nodes, with respect to a given centrality measure?
