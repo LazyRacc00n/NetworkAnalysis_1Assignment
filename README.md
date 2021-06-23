@@ -4,16 +4,16 @@
 <h5 style="text-align: right">Jacopo Dapueto s4345255 </h5>
 
 ## 1. Information about the dataset
-This dataset consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
+This dataset we choose consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
 It's been downloaded from [Stanford Network Analysis Project](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
 
-  - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>), is particular type of network in which specifically maps the connections of and from the perspective of a single person (an ego). In fact this networks represent circles of friends of a certains person (ego).
-  - The second is the one used in the assignment and it is obtained combining all the ego-networks, including the ego nodes themselves, along with an edge to each of their friends.
+  - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>)consist of a focal node ("ego") and the nodes to whom ego is directly connected to (these are called "alters"). In fact this networks represent circles of friends of a certain person (ego).
+  - The second is the one used in the assignment and it is obtained combining all the ego-networks, including the ego nodes themselves along with an edge to each of their friends.
 
 To visualize the network we used <b>Gephi</b> which provides functionalities to process networks, especially for very large networks. 
 
-One of them identifies the <i>communities</i> through the <i>modularity</i> measure and to each community is assigned a different color. In the image below the community are  densely connected components, and sparsely connected with the rest of the network. So this is a good way to represent the ego netework, because is possible to see better the circles of friends.
+One of them identifies the <i>communities</i> through the <i>modularity</i> measure and to each of them is assigned a different color. In the image below there are both densely connected communities and sparsely connected ones. So this is a good way to represent the ego netework, because is possible to see better the circles of friends.
 
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
