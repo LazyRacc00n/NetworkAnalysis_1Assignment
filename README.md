@@ -18,7 +18,7 @@ One of them identifies the <i>communities</i> through the <i>modularity</i> meas
  ![egonets](./images/Facebooks_circles.png)
 ## 2. Analysis
 
-The following table shows the global statistics we used to analyze the network in the following chapters.
+The following table shows the global statistics we used to analyze the network in the following chapters, it includes the number of nodes and edges, the average clustering and the global clustering etc. The entire neowork is connected so exist a path for each pair of nodes.
 
 | Dataset statistics | Values |
 |--------------------|------- |
@@ -38,7 +38,8 @@ The following table shows the global statistics we used to analyze the network i
 
 ### 2.1. Does the graph have the same characteristics of a random or a power-law network?
 
-To answer to the question we first visualize the degree distribution together with the fitted curve. Each dot represent a degree and the frequency it appears in the dataset.
+To answer to the question we first visualize the degree distribution together with the fitted curve. 
+Each dot represent a degree and the frequency it appears in the dataset.
  </br></br>
 
 
@@ -47,7 +48,7 @@ To answer to the question we first visualize the degree distribution together wi
   | *Figure 1 - Degree Distribution and fitting of the curve* |
   
   
-  Observing the chart of the degree distribution ( <i> figure 1 </i>) is it possible to notice that the degree distribution follows the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
+  At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
  
   </br>
 
@@ -58,16 +59,16 @@ To answer to the question we first visualize the degree distribution together wi
   | *Figure 2 - Curve fitted plotted in logarithmic scale* |
   
   
- Hence in the <i> figure 1 </i> is represented the degree distribution in a scatterplot with the curve that represents the trend of the distribution. The curve has been calculated making the fit of the curve, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> of the power law equation. This latest curve allows to prove that the degree destribution is effectively power law, in fact, plotting the curve in logarithmic scale, is possible to notice that the graphic follows a straight line, and this a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+ Hence the <i> figure 1 </i> represent the degree distribution in a scatterplot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/>. This latest curve allows to prove that the degree destribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
  
  
- What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely observe a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some features:
+ What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely display a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some common features:
  - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
  - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly mantain a deep and meaningful relation with a lot of people.
 
- The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the distribution above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
- We tried to simulate the average path length as the network grows: starting from a random set of nodes and step by step add nodes and edges so that the network remains connected.
- The follwing image shows the tendecy of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
+ The degree distribution follows a power law distribution but it's not a <i>scale free</i> network, as can be observed in the plot above there are a few hubs (already descibed as **High-degree cutoff**) and this suggests that the second moment of the degree distribution doesn't diverge. 
+ We tried to simulate the behaviour of the average path length as the network grows: starting from a random set of nodes, nodes and edges are added step by step so that the network remains connected.
+ The follwing image shows the tendecy of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then after some steps it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
  
  | ![Degree Distribution](./images/grow_network.png) |
   |:--: |
@@ -121,3 +122,5 @@ The <i> average clustering </i> is the average of all the <i> local clustering c
  <center> <img src="https://latex.codecogs.com/svg.image?\inline&space;C_i&space;=&space;\frac{L_i}{k_i(k_i-1)"/> </center>
  
  , in which <img src="https://latex.codecogs.com/svg.image?\inline&space;L_i"/> is the number of links between the <img src="https://latex.codecogs.com/svg.image?\inline&space;k_i"/> neighbors. It captures the density of links in i’s immediate neighborhood, and it is in the range [0,1]. In this case the mean value of the network is 0.605, it means that on average a node has his 60% of neighbors connected to each other so *structural holes* doesn't seem to be a problem in such network. 
+ 
+ On the other hand the global clustering is 0.51 and this could be due to the different local topologies in the networks, in particular there are components that seems to be densely connected and others components in a hub-and-spoke topology. 
