@@ -8,7 +8,7 @@ This dataset we choose consists of 'circles' (or 'friends lists') from Facebook 
 It's been downloaded from [Stanford Network Analysis Project](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
 
-  - The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>)consist of a focal node ("ego") and the nodes to whom ego is directly connected to (these are called "alters"). In fact this networks represent circles of friends of a certain person (ego).
+- The first contains 10 ego networks, each one has the edge list, a list of clicles (each one constisting of list of nodes), and other features of the network. An <i> Ego-centric network</i> (or <i>"ego" networks</i>)consist of a focal node ("ego") and the nodes to whom ego is directly connected to (these are called "alters"). In fact this networks represent circles of friends of a certain person (ego).
   - The second is the one used in the assignment and it is obtained combining all the ego-networks, including the ego nodes themselves along with an edge to each of their friends.
 
 To visualize the network we used <b>Gephi</b> which provides functionalities to process networks, especially for very large networks. 
