@@ -63,12 +63,10 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
   
 
-<div align="center">
-<figure>
+<figure align="center">
 <img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%" />
 <figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
 </figure>
-</div>
   
    
   
@@ -84,12 +82,12 @@ Each dot represent a degree and the frequency it appears in the dataset.
  The following image shows the tendency of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then after some steps it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
  
 
-<div align="center">
-<figure>
+<figure align="center">
+
 <img src="./images/grow_network.png" height="80%" width="80%" />
 <figcaption> <i>Figure 3 - average shortest path as the number of nodes increases</i> </figcaption>
+
 </figure>
-</div>
 
 </br></br>
  
