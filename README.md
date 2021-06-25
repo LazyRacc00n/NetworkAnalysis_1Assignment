@@ -50,10 +50,10 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
 
 
-<figure align="center">
+<div align="center">
 <img src="./images/degree_distribution.png" height="80%" width="80%" />
 <figcaption style="text-align: center"> <i>Figure 1 - Degree Distribution and fitting of the curve</i> </figcaption>
-</figure>
+</div>
 
 </br></br> 
   
