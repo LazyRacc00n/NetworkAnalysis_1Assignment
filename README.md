@@ -67,6 +67,8 @@ Each dot represent a degree and the frequency it appears in the dataset.
 <img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%" />
 <figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
 </figure>
+
+</br></br>
   
    
   
