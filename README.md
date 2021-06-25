@@ -15,7 +15,7 @@ To visualize the network we used <b>Gephi</b> which provides functionalities to 
 
 One of them identifies the <i>communities</i> through the <i>modularity</i> measure and to each of them is assigned a different color. In the image below there are both densely connected communities and sparsely connected ones. So this is a good way to represent the ego network, because is possible to see better the circles of friends.
 
- ![egonets](./images/Facebooks_circles.png)
+ <div style="text-align:center"><img src="./images/Facebooks_circles.png" height="70%" width="70%" /></div>
 ## 2. Analysis
 
 The following table shows the global statistics we used to analyze the network in the following chapters, it includes the number of nodes and edges, the average clustering and the global clustering etc. The entire network is connected so exist a path for each pair of nodes.
