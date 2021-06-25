@@ -4,6 +4,7 @@
 <h5 style="text-align: right">Jacopo Dapueto s4345255 </h5>
 
 ## 1. Information about the dataset
+
 This dataset we choose consists of 'circles' (or 'friends lists') from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.
 It's been downloaded from [Stanford Network Analysis Project](https://snap.stanford.edu/data/ego-Facebook.html).
 The linked page provides two different dataset:
@@ -20,6 +21,7 @@ One of them identifies the <i>communities</i> through the <i>modularity</i> meas
   <img src="./images/Facebooks_circles.png" height="75%" width="75%" />
   </figure>
 </div>
+
 ## 2. Analysis
 
 The following table shows the global statistics we used to analyze the network in the following chapters, it includes the number of nodes and edges, the average clustering and the global clustering etc. The entire network is connected so exist a path for each pair of nodes.
@@ -48,12 +50,14 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
 
 
-<div align="center">
+<p align="center">
 <figure>
 <img src="./images/degree_distribution.png" height="80%" width="80%" />
-<figcaption> <i>Figure 1 - Degree Distribution and fitting of the curve</i> </figcaption>
+<figcaption style="text-align:center"> <i>Figure 1 - Degree Distribution and fitting of the curve</i> </figcaption>
 </figure>
-</div>
+</p>
+
+</br></br>
   
   
   At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
@@ -62,12 +66,12 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
   
 
-<div align="center">
+<p align="center">
 <figure>
 <img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%" />
-<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
+<figcaption style="text-align:center"> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
 </figure>
-</div>
+</p>
   
    
   
@@ -83,13 +87,14 @@ Each dot represent a degree and the frequency it appears in the dataset.
  The following image shows the tendency of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then after some steps it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
  
 
-<div align="center">
+<p align="center">
 <figure>
 <img src="./images/grow_network.png" height="80%" width="80%" />
-<figcaption> <i>Figure 3 - average shortest path as the number of nodes increases</i> </figcaption>
+<figcaption style="text-align:center"> <i>Figure 3 - average shortest path as the number of nodes increases</i> </figcaption>
 </figure>
-</div>
-  
+</p>
+
+</br></br>
  
 This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point between the *Ultra-small world* and the *Small world* regimes where the hubs are still enough to shrinks the distances compared to a random network of similar size.
 However we cannot be sure about that because of the limited dimension of the dataset.
