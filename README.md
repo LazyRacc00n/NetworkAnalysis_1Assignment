@@ -15,9 +15,11 @@ To visualize the network we used <b>Gephi</b> which provides functionalities to 
 
 One of them identifies the <i>communities</i> through the <i>modularity</i> measure and to each of them is assigned a different color. In the image below there are both densely connected communities and sparsely connected ones. So this is a good way to represent the ego network, because is possible to see better the circles of friends.
 
- <div align="center">
-  <img src="./images/Facebooks_circles.png" height="70%" width="70%" />
-<div>
+<div align="center">
+  <figure>
+  <img src="./images/Facebooks_circles.png" height="75%" width="75%" />
+  </figure>
+</div>
 ## 2. Analysis
 
 The following table shows the global statistics we used to analyze the network in the following chapters, it includes the number of nodes and edges, the average clustering and the global clustering etc. The entire network is connected so exist a path for each pair of nodes.
@@ -45,9 +47,13 @@ Each dot represent a degree and the frequency it appears in the dataset.
  </br></br>
 
 
-  | ![Degree Distribution](./images/degree_distribution.png) |
-  |:--: |
-  | *Figure 1 - Degree Distribution and fitting of the curve* |
+
+<div align="center">
+<figure>
+<img src="./images/degree_distribution.png" height="80%" width="80%" />
+<figcaption> <i>Figure 1 - Degree Distribution and fitting of the curve</i> </figcaption>
+</figure>
+</div>
   
   
   At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
@@ -55,11 +61,15 @@ Each dot represent a degree and the frequency it appears in the dataset.
   </br>
 
   
+
+<div align="center">
+<figure>
+<img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%" />
+<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
+</figure>
+</div>
   
-  | ![Curve Fit](./images/fitted_curve_degree_distribution.png) |
-  |:--: |
-  | *Figure 2 - Curve fitted plotted in logarithmic scale* |
-  
+   
   
  Hence the <i> figure 1 </i> represent the degree distribution in a scattershot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/>. This latest curve allows to prove that the degree distribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
  
@@ -72,9 +82,13 @@ Each dot represent a degree and the frequency it appears in the dataset.
  We tried to simulate the behavior of the average path length as the network grows: starting from a random set of nodes, nodes and edges are added step by step so that the network remains connected.
  The following image shows the tendency of the distance, since the first nodes are randomly selected the distance doesn't follow one of the highlighted curves but then after some steps it converges to the <img src="https://latex.codecogs.com/svg.image?\inline&space;\frac{\ln{N}}{\ln{\ln{N}}}&space;"/> one. 
  
- | ![Degree Distribution](./images/grow_network.png) |
-  |:--: |
-  | *Figure 3 - average shortest path as the number of nodes increases* |
+
+<div align="center">
+<figure>
+<img src="./images/grow_network.png" height="80%" width="80%" />
+<figcaption> <i>Figure 3 - average shortest path as the number of nodes increases</i> </figcaption>
+</figure>
+</div>
   
  
 This result suggests that the <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/> might be equal to 3, which is the critical point between the *Ultra-small world* and the *Small world* regimes where the hubs are still enough to shrinks the distances compared to a random network of similar size.
@@ -84,6 +98,8 @@ However we cannot be sure about that because of the limited dimension of the dat
 ### 2.2. Which are the most important nodes, with respect to a given centrality measure?
 
 We decide to measure the "importance" of the nodes considering the betweenness, the closeness centrality and the degree.
+
+
 |Betweenness|Closeness|Degree|
 |--|--|--|
 |<table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>0.480</td></tr> <tr><td>**1684**</td><td>0.337</td></tr> <tr><td>3437</td><td>0.236</td></tr> <tr><td>1912</td><td>0.229</td></tr> <tr><td>1085</td><td>0.149</td></tr> <tr><td>0</td><td>0.146</td></tr> <tr><td>698</td><td>0.115</td></tr><tr><td>567</td><td>0.096</td></tr> <tr><td>58</td><td>0.084</td></tr> <tr><td>428</td><td>0.064</td></tr> </table>| <table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>0.459</td></tr>  <tr><td>58</td><td>0.397</td></tr> <tr><td>428</td><td>0.394</td></tr> <tr><td>563</td><td>0.393</td></tr> <tr><td>**1684**</td><td>0.393</td></tr> <tr><td>171</td><td>0.370</td></tr> <tr><td>348</td><td>0.369</td></tr><tr><td>483</td><td>0.369</td></tr> <tr><td>414</td><td>0.369</td></tr> <tr><td>376</td><td>0.366</td></tr></table>| <table> <tr><th>Node</th><th>Value</th></tr><tr><td>**107**</td><td>1045</td></tr>  <tr><td>**1684**</td><td>782</td></tr> <tr><td>1912</td><td>792</td></tr> <tr><td>3437</td><td>547</td></tr> <tr><td>0</td><td>347</td></tr> <tr><td>2543</td><td>294</td></tr> <tr><td>2347</td><td>291</td></tr><tr><td>1888</td><td>254</td></tr> <tr><td>1800</td><td>245</td></tr> <tr><td>1663</td><td>235</td></tr></table>
