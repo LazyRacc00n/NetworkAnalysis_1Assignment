@@ -101,6 +101,8 @@ However we cannot be sure about that because of the limited dimension of the dat
 
 We decide to measure the "importance" of the nodes considering the betweenness, the closeness centrality and the degree.
 
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
 
 |Betweenness|Closeness|Degree|
 |--|--|--|
