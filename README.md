@@ -57,7 +57,7 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
 </br></br> 
   
-  At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
+  At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fitted curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&space;p_k&space;\sim&space;C*k^{-\gamma}"/>.
  
   </br>
 
@@ -65,17 +65,17 @@ Each dot represent a degree and the frequency it appears in the dataset.
 
 <figure align="center">
 <img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%" />
-<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
+<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scale</i> </figcaption>
 </figure>
 
 </br></br>
   
    
   
- Hence the <i> figure 1 </i> represent the degree distribution in a scattershot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/>. This latest curve allows to prove that the degree distribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
+ Hence the <i> figure 1 </i> represent the degree distribution in a scatterplot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&space;\gamma"/>. This latest curve allows to prove that the degree distribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.
  
  
- What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely display a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some common features:
+ What can be further observed in the figure 2, is that our network doesn't have a degree distribution that follows a pure power law. In fact real networks rarely display a degree distribution following a pure power law, instead real systems display a shape similar to what is shown in the figure 2 that share some common features:
  - **Low-degree saturation** that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.
  - **High-degree cutoff** appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&space;P_k&space;"/> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly maintain a deep and meaningful relation with a lot of people.
 

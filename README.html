@@ -267,7 +267,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <h5 style="text-align: right">Jacopo Dapueto s4345255 </h5>
 <h2 class="mume-header" id="1-information-about-the-dataset">1. Information about the dataset</h2>
 
-<p>This dataset we choose consists of &apos;circles&apos; (or &apos;friends lists&apos;) from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.<br>
+<p>The dataset we choose consists of &apos;circles&apos; (or &apos;friends lists&apos;) from Facebook collected from survey participants. The dataset includes node features (profiles), circles, and ego networks.<br>
 It&apos;s been downloaded from <a href="https://snap.stanford.edu/data/ego-Facebook.html">Stanford Network Analysis Project</a>.<br>
 The linked page provides two different dataset:</p>
 <ul>
@@ -345,15 +345,15 @@ Each dot represent a degree and the frequency it appears in the dataset.<br>
 <figcaption style="text-align: center"> <i>Figure 1 - Degree Distribution and fitting of the curve</i> </figcaption>
 </figure>
 <p><br><br></p>
-<p>At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fittd curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;p_k&amp;space;\sim&amp;space;C*k^{-\gamma}">.</p>
+<p>At the first sight it seems that the chart in <i> figure 1 </i> shows the degree distribution following the trend of a <i>power law</i> and the fitted curve is described by the equation <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;p_k&amp;space;\sim&amp;space;C*k^{-\gamma}">.</p>
   <br>
 <figure align="center">
 <img src="./images/fitted_curve_degree_distribution.png" height="80%" width="80%">
-<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scalee</i> </figcaption>
+<figcaption> <i>Figure 2 - Curve fitted plotted in logarithmic scale</i> </figcaption>
 </figure>
 <p><br><br></p>
-<p>Hence the <i> figure 1 </i> represent the degree distribution in a scattershot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;\gamma">. This latest curve allows to prove that the degree distribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.</p>
-<p>What can be further observed in the figure 2, is that our network doesn&apos;t have a degree distribution that follows a pure power law. In fact real networks rarely display a degree distribution following a pure power law, instead real systems display a shape similar to what is show in the figure 2 that share some common features:</p>
+<p>Hence the <i> figure 1 </i> represent the degree distribution in a scatterplot along with with the curve that represents the trend of the distribution. The curve has been computed fitting the power law function, estimating the parameter <i> C </i> and  <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;\gamma">. This latest curve allows to prove that the degree distribution is effectively a power law, in fact showing the curve in logarithmic scale is possible to observe that the green line is a straight one, and this is a characteristic of a degree distribution that follows a power law <i> ( figure 2 ) </i>.</p>
+<p>What can be further observed in the figure 2, is that our network doesn&apos;t have a degree distribution that follows a pure power law. In fact real networks rarely display a degree distribution following a pure power law, instead real systems display a shape similar to what is shown in the figure 2 that share some common features:</p>
 <ul>
 <li><strong>Low-degree saturation</strong> that is shown in the initial flatten <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;P_k&amp;space;"> region. This happen when the network have  fewer small degree nodes than expected for a pure power law.</li>
 <li><strong>High-degree cutoff</strong> appears as a rapid drop in <img src="https://latex.codecogs.com/svg.image?\inline&amp;space;P_k&amp;space;"> : which means that the network has fewer high-degree nodes than expected in a pure power law, and also limiting the size of the hubs. This happens when there is a limitation in the number of links a node can have. Since our system is taken from a social network, is cutoff may be a due to the fact that one person can hardly maintain a deep and meaningful relation with a lot of people.</li>
